@@ -8,6 +8,7 @@ import org.apache.kafka.streams.Topology;
 import org.apache.kafka.streams.TopologyTestDriver;
 import org.junit.Test;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.IOException;
@@ -22,7 +23,7 @@ import static org.hamcrest.Matchers.not;
 
 public class KafkaStreamsApplicationTest {
 
-    private final static String TEST_CONFIG_FILE = "configuration/test.properties";
+    private final static String TEST_CONFIG_FILE = "src/test/resources/configuration/test.properties";
 
     @Test
     public void topologyShouldUpperCaseInputs() throws IOException {
