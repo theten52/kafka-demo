@@ -12,7 +12,7 @@ import java.util.Properties;
 public class ConsumerExample {
 
     public static void main(String[] args) throws Exception {
-        args = new String[] {"src/main/resources/getting-started.properties"};
+        args = new String[] {"kafka-simple/src/main/resources/getting-started.properties"};
         if (args.length != 1) {
             System.out.println("Please provide the configuration file path as a command line argument");
             System.exit(1);

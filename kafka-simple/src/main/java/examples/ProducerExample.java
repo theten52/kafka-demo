@@ -18,7 +18,7 @@ import java.util.Random;
 public class ProducerExample {
 
     public static void main(String[] args) throws IOException {
-        args = new String[] {"src/main/resources/getting-started.properties"};
+        args = new String[]{"kafka-simple/src/main/resources/getting-started.properties"};
 
         if (args.length != 1) {
             System.out.println("Please provide the configuration file path as a command line argument");

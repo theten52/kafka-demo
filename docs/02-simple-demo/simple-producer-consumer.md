@@ -6,7 +6,11 @@
 
 执行以下命令创建topic：
 
-注意：命令执行路径下应该存在一个名为 getting-started.properties 的配置文件。
+注意：命令执行路径下应该存在一个名为 docker-compose.yml 的配置文件。
+
+```shell
+cd kafka-simple/src/main/resources/scripts
+```
 
 ```shell
 docker compose exec broker \

@@ -1,2 +1,3 @@
+include 'kafka-simple'
 include 'kafka-stream'
 
