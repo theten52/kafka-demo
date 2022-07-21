@@ -1,6 +1,8 @@
-# Confluent Kafka Simple Producer Consumer Demo
+# Confluent Kafka 简单生产者消费者演示
 
 [Getting Started with Apache Kafka and Java](https://developer.confluent.io/get-started/java/)
+
+代码参考：[kafka-simple](./../../kafka-simple)
 
 ## 创建 Topic
 
