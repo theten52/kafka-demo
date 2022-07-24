@@ -11,6 +11,7 @@ services:
 
   broker:
     image: confluentinc/cp-kafka:7.0.0
+    hostname: broker
     container_name: broker
     ports:
       - "9092:9092"
@@ -24,3 +25,16 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    hostname: kafdrop
+    container_name: kafdrop
+    ports:
+      - "9000:9000"
+    depends_on:
+      - broker
+    environment:
+      KAFKA_BROKERCONNECT: "broker:29092"
+      JVM_OPTS: "-Xms32M -Xmx64M"
+      SERVER_SERVLET_CONTEXTPATH: "/"
