@@ -1,3 +1,4 @@
 include 'kafka-simple'
 include 'kafka-stream'
+include 'kafka-admin'
 
